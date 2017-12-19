@@ -1,0 +1,31 @@
+[{
+  "command": "\/tmp\/ucdInstall\/ucdInstall.sh",
+  "commandargs": "$root_directory",
+  "description": "This script package installs IBM UrbanCode Deploy",
+  "execmode": 0,
+  "filename": "Archive.zip",
+  "keys": [{
+      "locked": false,
+      "required": true,
+      "scriptdefaultvalue": "http:\/\/atlantis.syd.iic.ihost.com\/files\/software\/PureApplication\/Patterns\/UrbanCode_Deploy\/6.2.7.0",
+      "scriptkey": "INSTALLER_BASEURL",
+      "scriptvalue": "http:\/\/atlantis.syd.iic.ihost.com\/files\/software\/PureApplication\/Patterns\/UrbanCode_Deploy\/6.2.7.0",
+      "type": "string"
+    },
+    {
+      "locked": false,
+      "required": true,
+      "scriptdefaultvalue": "ibm-ucd-6.2.7.0.xxxxxx.zip",
+      "scriptkey": "SERVER_INSTALLER_FILENAME",
+      "scriptvalue": "ibm-ucd-6.2.7.0.xxxxxx.zip",
+      "type": "string"
+    }
+  ],
+  "location": "\/tmp\/ucdInstall",
+  "log": "\/tmp\/ucdInstall",
+  "name": "UrbanCode_Deploy_Install_Server",
+  "ostype": "linux\/unix",
+  "timeout": 0,
+  "type": "APPLICATION",
+  "version": "6.2.7.0"
+}]
